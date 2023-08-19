@@ -32,10 +32,10 @@ public class GetUserTest extends BaseTest{
 	///public/v2/users/4165714/?name&staus
 	@Test(priority = 2)
 	public void getUserTest() {
-		restClient.get(GOREST_ENDPOINT+"/"+4347909, true, true)
+		restClient.get(GOREST_ENDPOINT+"/"+4501432, true, true)
 					.then().log().all()
 						.assertThat().statusCode(APIHttpStatus.OK_200.getCode())
-							.and().body("id", equalTo(4347909));
+							.and().body("id", equalTo(4501432));
 						
 	}
 	
